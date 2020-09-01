@@ -14,10 +14,10 @@ public class Driver {
             ResultSet myRs = myStmt.executeQuery("select * from reiziger") ;
             while (myRs.next()){
                 if (myRs.getString("tussenvoegsel") == null){
-                    System.out.println(myRs.getString("voorletters") + ' ' + myRs.getString("achternaam") + ' ' + myRs.getString("geboortedatum"));}
+                    System.out.println(myRs.getString("voorletters") + ". " + myRs.getString("achternaam") + " (" + myRs.getString("geboortedatum") + ")");}
 
                 else{
-                    System.out.println(myRs.getString("voorletters") + ' ' + myRs.getString("tussenvoegsel")+ ' ' + myRs.getString("achternaam") + ' ' + myRs.getString("geboortedatum"));
+                    System.out.println(myRs.getString("voorletters") + ". " + myRs.getString("tussenvoegsel")+ ' ' + myRs.getString("achternaam") + " (" + myRs.getString("geboortedatum") + ")");
                 }
             }
         }
