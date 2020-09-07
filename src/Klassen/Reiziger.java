@@ -25,8 +25,40 @@ public class Reiziger {
         this.id = id;
     }
 
+    public String getVoorletters() {
+        return voorletters;
+    }
+
+    public void setVoorletters(String voorletters) {
+        this.voorletters = voorletters;
+    }
+
+    public void setTussenvoegsel(String tussenvoegsel) {
+        this.tussenvoegsel = tussenvoegsel;
+    }
+
+    public void setAchternaam(String achternaam) {
+        this.achternaam = achternaam;
+    }
+
+    public String getTussenvoegsel() {
+        return tussenvoegsel;
+    }
+
+    public String getAchternaam() {
+        return achternaam;
+    }
+
     public String getNaam() {
         return String.format("%s %s %s", voorletters, tussenvoegsel, achternaam);
+    }
+
+    public String getGeboortedatum() {
+        return String.valueOf(geboortedatum);
+    }
+
+    public void setGeboortedatum(Date geboortedatum) {
+        this.geboortedatum = geboortedatum;
     }
 
     @Override
